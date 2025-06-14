@@ -1,85 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Heat Alert</title>
-    <link rel="icon" href="images/UrbanHeatAlert_Logo.png" type="image/png">
-    <link rel="stylesheet" href="css/menu.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Heat Alert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="header-left">
-                <img src="images/Captura de pantalla 2025-06-13 114316.png" alt="Urban Heat Alert" class="logo">
-                 
-            </div>
-            <ul>
-                <li><a href="menu.html">Inicio</a></li>
-                <li><a href="alertas.html">Alertas</a></li>
-                <li><a href="recomendaciones.html">Recomendaciones</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="inicio.html">Perfil</a></li> 
-            </ul>
-        </nav>
-    </header>
-   
-        <section class="hero">
-            <div class="hero-left">
-                <h1>Anticipamos el calor, protegemos tu ciudad</h1>
-                <p>Dónde sube el calor, Urban Heat Alert te protege primero.</p>
-                <a href="#" class="btn">Ver más</a>
-            </div>
-            <div class="hero-right">
-            <img src="images/Captura de pantalla 2025-06-13 114057.png" alt="Termómetro" class="hero-image">
-            </div>
-        </section>
-      <section class="contenido-central">
-    <div class="imagenes">
-      <div class="img-row-1">
-        <img src="images/Captura de pantalla 2025-06-13 115126.png" alt="img1" />
+  <!-- Barra de navegación -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/UrbanHeatAlert_Logo.png" alt="Urban Heat Alert Logo">
       </div>
-      <div class="img-row-2">
-        <img src="images/Captura de pantalla 2025-06-13 115203.png" />
-        <img src="images/Captura de pantalla 2025-06-13 115227.png" alt="img3" />
-      </div>
-    </div>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Alertas</a></li>
+        <li><a href="#">Recomendaciones</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="inicio.html" class="perfil-link">Perfil</a></li>
+      </ul>
+  
+    </nav>
+  </header>
 
-    <div class="descripcion">
-      <h2>Descripción del producto</h2>
-      <p>
-       Urban Heat Alert es una plataforma digital que monitorea en tiempo real las temperaturas en 
+  <!-- Sección Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Anticipamos el calor, protegemos tu ciudad</h1>
+      <p>Donde sube el calor, Urban Heat Alert te protege primero.</p>
+      <button class ="btn_Ver_mas">Ver más</button>
+    </div>
+    <div class="hero-image">
+      <img src="images/termometro.jpg" alt="Ciudad con sol intenso">
+    </div>
+  </section>
+
+  <!-- Sección de ilustraciones y descripción -->
+  <section class="descripcion">
+    <div class="ilustraciones">
+    <div class="fila fila-superior">
+      <img src="images/Imagen1.avif" alt="Niña con calor">
+    </div>
+    <div class="fila fila-inferior">
+      <img src="images/Imagen2.avif" alt="Persona tomando agua">
+      <img src="images/Imagen3.avif" alt="Persona en playa con calor">
+    </div>
+  </div>
+  <div class="texto-descripcion">
+    <h2>Descripción del producto</h2>
+    <p>Urban Heat Alert es una plataforma digital que monitorea en tiempo real las temperaturas en 
        zonas urbanas del Perú. Utiliza inteligencia artificial y machine learning para analizar datos 
        climáticos, detectar patrones de calor extremo y anticipar posibles golpes de calor. La plataforma 
        recopila estadísticas, guarda registros mensuales en una base de datos y prioriza la atención en 
        comunidades vulnerables. Además, ofrece alertas personalizadas, mapas térmicos interactivos y 
-       sugerencias preventivas para proteger la salud pública frente al cambio climático.
-      </p>
-      <a href="#" class="btn-info">Más información</a>
+       sugerencias preventivas para proteger la salud pública frente al cambio climático.</p>
+    <button class ="btn_Informacion">Más información</button>
+  </div>
+</section>
+
+
+  <!-- Sección de alertas -->
+  <section class="alertas">
+    <h2>Alertas</h2>
+    <img src="images/Mapa_Peru.png" alt="Mapa de calor">
+    <button class ="btn_Mapa">Ver mapa</button>
+  </section>
+
+  <!-- Sección de recomendaciones -->
+  <section class="recomendaciones">
+    <h2>Recomendaciones</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <img src="images/water.png" alt="Hidratación constante">
+        <ul>
+          <li>Bebe agua incluso si no tienes sed.</li>
+          <li>Evita bebidas azucaradas o con cafeína.</li>
+        </ul>
+      </div>
+      <div class="tarjeta">
+        <img src="images/gorra.png" alt="Evita sol directo">
+        <ul>
+          <li>Permanece en sombra entre 10 a.m. y 4 p.m.</li>
+          <li>Usa sombrero, lentes y bloqueador.</li>
+        </ul>
+      </div>
+      <div class="tarjeta">
+        <img src="images/run.png" alt="Evita esfuerzo físico">
+        <ul>
+          <li>No realices actividad física intensa en horas de calor.</li>
+        </ul>
+      </div>
     </div>
   </section>
-    <!-- sección de Preguntas Frecuentes -->
+
+  <!-- Noticias -->
+  <section class="noticias">
+    <h2>Noticias</h2>
+    <div class="carousel">
+      <img src="images/Noticia1.png" alt="Noticia 1">
+      <img src="images/Noticia2.png" alt="Noticia 2">
+      <img src="images/Noticia3.png" alt="Noticia 3">
+    </div>
+  </section>
+
+<!-- Preguntas Frecuentes -->
 <section class="faq">
-    <h2>Preguntas Frecuentes</h2>
-    <div class="faq-item">
-        <h3>¿Cómo me avisa la app si hay una ola de calor?</h3>
-        <p>Recibirás una notificación en tu celular cuando se detecten temperaturas extremas en tu zona.</p>
-    </div>
-    <div class="faq-item">
-        <h3>¿Qué hago si alguien tiene síntomas de golpe de calor?</h3>
-        <p>La app incluye una guía de primeros auxilios con pasos básicos. Si el estado es grave o la persona está inconsciente o no respira, llama inmediatamente al 911.</p>
-    </div>
-    <div class="faq-item">
-        <h3>¿Puedo sugerir mejoras o nuevas funciones?</h3>
-        <p>¡Obvio! En la opción de "Contactos/Sugerencias" puedes dejarnos tu opinión e ideas para mejorar la app.</p>
-    </div>
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq-item">
+    <h3>¿Cómo me avisa la app si hay una ola de calor?</h3>
+    <p>Recibirás una notificación en tu celular cuando se detecten temperaturas extremas en tu zona.</p>
+  </div>
+  <div class="faq-item">
+    <h3>¿Qué hago si alguien tiene síntomas de golpe de calor?</h3>
+    <p>La app incluye una guía de primeros auxilios con pasos básicos. Si el estado es grave o la persona está inconsciente o no respira, llama inmediatamente al 911.</p>
+  </div>
+  <div class="faq-item">
+    <h3>¿Puedo sugerir mejoras o nuevas funciones?</h3>
+    <p>¡Obvio! En la opción de "Contactos/Sugerencias" puedes dejarnos tu opinión e ideas para mejorar la app.</p>
+  </div>
 </section>
-    <footer>
-        <p>&copy; 2025 Urban Heat Alert</p>
-    </footer>
-    <script src="js/menu.js"></script>
-    
-</script>
+
+
+
+  <!-- Sección de contacto -->
+  <section class="contacto">
+  <h3>¿Necesita más información?</h3>
+  <p>Contactate con nosotros</p>
+  <form class="formulario-contacto">
+    <input type="email" placeholder="Ingresa tu email" required>
+    <button type="submit">Confirmar</button>
+  </form>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Urban Heat Alert | Políticas de privacidad | Términos de uso</p>
+    <p>Redes sociales: Facebook | Instagram | Twitter</p>
+  </footer>
 </body>
 </html>
